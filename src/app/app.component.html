@@ -1,0 +1,19 @@
+<hello name="{{ name }}"></hello>
+<h1>Books</h1>
+<!--
+<div ng-repeat="book in books">
+  {{ book.id }}
+</div>
+-->
+<b>all books unsorted</b>
+<div *ngFor="let book of books">
+  {{book.id}}, {{book.name}}, {{book.language}}, {{book.year}}, {{book.term}}
+</div>
+
+<hr>
+
+<b>all book-groups sorted</b>
+<div *ngFor="let group of bookGroupTitles">
+  {{group}}
+</div>
+
